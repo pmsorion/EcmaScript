@@ -1,0 +1,19 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "entendiendo ecmascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmsorion/EcmaScript.git"
+  },
+  "author": "Francisco Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmsorion/EcmaScript/issues"
+  },
+  "homepage": "https://github.com/pmsorion/EcmaScript#readme"
+}
