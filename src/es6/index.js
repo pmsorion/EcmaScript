@@ -91,3 +91,66 @@ console.log(globaLet);
 const a = 'b';
 a = 'c';
 //TypeError: Assignment to constant variable.
+
+
+let name = 'Francisco';
+let age = 52;
+
+//creacion de objetos
+//antes es5
+obj = { name: name, age: age};
+console.log(obj)
+
+//es6
+obj2 = { name, age };
+console.log(obj2);
+
+
+//es6
+//arrow function
+
+const names = [
+    {name: 'Francisco', age: 52},
+    {name: 'Juanda', age: 19}
+]
+
+//si yo quiero iterar por cada uno de estos elementos para mostrarlos en la consola 
+//usamos el metodo map.
+
+//antes
+let listOfName = names.map(function (item) {
+    console.log(item.name);
+});
+
+//ahora es6 con funciones anonimas
+
+let listOfName2 = names.map(item => console.log(item.name))
+
+const listOfName3 = (name, age) => {
+    //... codigo
+}
+
+const listOfName4 = name => {
+    //bloque de codigo
+}
+
+const square = num => num * num;
+
+//promesas
+//algo va a pasar
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (false) {
+            resolve('Todo ok');
+        } else {
+            reject('Ups algo salio mal');
+        }
+    });
+}
+
+//se pueden anidar muchos then
+helloPromise()
+    .then(response => console.log(response))
+    .then( () => console.log('hola mundo'))
+    .catch(error => console.log(error));
