@@ -207,3 +207,4 @@ console.log(generatorHello.next().value);
 console.log(generatorHello.next().value);
 
 //este caso es muy utili para fibonacci
+
